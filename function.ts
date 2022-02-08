@@ -16,8 +16,15 @@ function test_param(n1:number,n2:number):void
 
 test_param(1,2);
  function display(fn:string,ln:string,mn?:string):void{
-     console.log(fn,mn,ln);
+
+    if(mn !=undefined)
+    {
+        console.log(fn,ln);
+    }
+    else{
+        console.log(fn,mn,ln);
+    }
  }
 
-display("akhilesh","kumar","Jha");
+display("akhilesh","Jha","Kumar");
 display("akhilesh","Jha");
